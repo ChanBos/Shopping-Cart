@@ -233,7 +233,7 @@ function updateCartTotal() {
   document.getElementById("baskettotal").setAttribute('value', basketTotal.toFixed(2))
 
   let vatTotal = calculateDiscount() * 0.15;
-  document.getElementById("vat").setAttribute('value', vatTotal.toFixed(2))
+  document.getElementById("vattotal").setAttribute('value', vatTotal.toFixed(2))
 }
 
 // Finalizing and Display Functions:
@@ -332,7 +332,7 @@ function displayCart() {
                   <label class="formcontainer">- - VAT - -</label><br />
                   <div class="totalcontainer">
                     <label>R</label>
-                    <input class="totalinput" value=${VAT(total).toFixed(2)}><br />
+                    <input class="totalinput" id="vattotal" value=${VAT(total).toFixed(2)}><br />
                   </div>  
                 </div>
                 <div id="total">
