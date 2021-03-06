@@ -303,8 +303,8 @@ function displayCart() {
           <form id="formcontainer1">
           <div id="collectordelivery">
             <label class="formcontainer">How would you like to receive your order?</label><br />
-            <input class="radio" type="radio" name="deliveryinput" class="collectordelivery" value="0" checked/>Collection (Free of charge)<br />
-            <input class="radio" type="radio" name="getitmethod" class="collectordelivery" value="delivery"/>Delivery
+            <input class="radio" type="radio" name="deliveryinput" value="0" checked/>Collection (Free of charge)<br />
+            <input class="radio" type="radio" name="getitmethod" value="delivery"/>Delivery
           </div>
           <div id="deliveryoptions">
             <label id="delivery" class="formcontainer">Select the preferred delivery option:</label><br />
@@ -330,11 +330,17 @@ function displayCart() {
               <div>
                 <div id="vat">
                   <label class="formcontainer">- - VAT - -</label><br />
-                  <input class="totalinput" value=R${VAT(total).toFixed(2)}><br />
+                  <div class="totalcontainer">
+                    <label>R</label>
+                    <input class="totalinput" value=${VAT(total).toFixed(2)}><br />
+                  </div>  
                 </div>
                 <div id="total">
                   <label id="baskettotaltitle" class="formcontainer">- - TOTAL - -</label><br />
-                  <input class="totalinput" id="baskettotal" value=R${total}><br />
+                  <div class="totalcontainer">
+                    <label>R</label>
+                    <input class="totalinput" id="baskettotal" value=${total}><br />
+                  </div> 
                 </div>
               </div>
               <div id="cartfunctionbuttons">
