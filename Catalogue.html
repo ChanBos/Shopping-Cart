@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<title>Our Catalogue</title>
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav class="top_nav">
+		<img src="images/Logo.png" alt="Logo" id="logo" />
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="Catalogue.html">Catalogue</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</div>
+
+		<span id="hamburger" onclick="openNav()">&#9776;</span>
+
+		<div id="search_bar">
+			<input type="search" placeholder="search..." />
+			<button><i class="fas fa-search"></i></button>
+		</div>
+		<!-- Created a shopping cart button that shows how many items are in the basket. -->
+		<div>
+			<a href="ShoppingCart.html" class="button" id="cart-button">
+				<i class="fas fa-shopping-cart" id="cart"></i>
+				<span class="amount-products badge badge-warning carttotal" id="lblCartCount" onchange="countCart()">0</span>
+			</a>
+		</div>
+	</nav>
+
+	<h1>Our Catalogue</h1>
+	<!-- Added data attributes to all of the product buttons so that the product buttons will allow for items to be added to the cart -->
+	<section id="products" class="container">
+		<div class="row">
+			<div class="column plant">
+				<h2>Agapanthus (Purple Cloud/ African Lily)</h2>
+				<img src="images/Agapanthus.jpg" alt="Agapanthus" class="img-thumbnail image-fluid" />
+				<p>R95.00</p>
+				<a href="Agapanthus.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="Agapanthus (Purple Cloud/ African Lily)"
+					data-image="images/Agapanthus.jpg" data-price="95.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+			<div class="column plant">
+				<h2>Sweet Alyssum (Royal Carpet)</h2>
+				<img src="images/Alyssum.jpg" alt="Alyssum" class="img-thumbnail image-fluid" />
+				<p>R25.00</p>
+				<a href="Alyssum.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="Sweet Alyssum (Royal Carpet)"
+					data-image="images/Alyssum.jpg" data-price="25.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+			<div class="column plant" class="plant">
+				<h2>Clivia (Natal Lily/ Bush Lily)</h2>
+				<img src="images/Clivia.jpg" alt="Clivia" class="img-thumbnail image-fluid" />
+				<p>R95.00</p>
+				<a href="Clivia.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="Clivia (Natal Lily/ Bush Lily)"
+					data-image="images/Clivia.jpg" data-price="95.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+			<div class="column plant">
+				<h2>Dianthus (Ideal Select Violet)</h2>
+				<img src="images/Dianthus.jpg" alt="Dianthus" class="img-thumbnail image-fluid" />
+				<p>R45.00</p>
+				<a href="Dianthus.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="Dianthus (Ideal Select Violet)"
+					data-image="images/Dianthus.jpg" data-price="45.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column plant">
+				<h2>Dahlia Pinnata (Dreamy Eyes)</h2>
+				<img src="images/Dahlia.jpg" alt="Dahlia" class="img-thumbnail image-fluid" />
+				<p>R40.00</p>
+				<a href="Dahlia.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="Dahlia Pinnata (Dreamy Eyes)"
+					data-image="images/Dahlia.jpg" data-price="40.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+			<div class="column plant">
+				<h2>African Daisy (Bright Lights Yellow)</h2>
+				<img src="images/Daisy.jpg" alt="African_Daisy" class="img-thumbnail image-fluid" />
+				<p>R50.00</p>
+				<a href="Daisy.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="African Daisy (Bright Lights Yellow)"
+					data-image="images/Daisy.jpg" data-price="50.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+			<div class="column plant">
+				<h2>French Marigold (Honeycomb)</h2>
+				<img src="images/Marigold.jpg" alt="Marigold" class="img-thumbnail image-fluid" />
+				<p>R35.00</p>
+				<a href="Marigold.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="French Marigold (Honeycomb)"
+					data-image="images/Marigold.jpg" data-price="35.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+			<div class="column plant">
+				<h2>Petunia (Supercal Neon Rose)</h2>
+				<img src="images/Petunia.jpg" alt="Petunia" class="img-thumbnail image-fluid" />
+				<p>R45.00</p>
+				<a href="Petunia.html" class="button details">More Details</a>
+				<button onclick="addVisualCart(this)" data-name="Petunia (Supercal Neon Rose)"
+					data-image="images/Petunia.jpg" data-price="45.00" class="add-to-cart"><i
+						class="fas fa-shopping-cart"></i> Add To Cart</button>
+			</div>
+		</div>
+	</section>
+
+	<div>
+		<h2>Plant information summary:</h2>
+		<table class="table table-hover" id="plantinfo">
+			<tbody>
+				<tr>
+					<th scope="row"></th>
+					<th scope="col" class="reviewhead"><b>Sun or Shade:</b></th>
+					<th scope="col" class="reviewhead"><b>Annual or Perennial:</b></th>
+					<th scope="col" class="reviewhead"><b>Height:</b></th>
+					<th scope="col" class="reviewhead"><b>Width:</b></th>
+				</tr>
+				<tr>
+					<th scope="row"><b>Agapanthus:</b></th>
+					<td>Full sun</td>
+					<td>Perennial</td>
+					<td>90-120cm</td>
+					<td>60-90cm</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>Sweet Alyssum:</b></th>
+					<td>Full sun to light shade</td>
+					<td>Annual</td>
+					<td>15cm</td>
+					<td>20cm</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>Clivia</b></th>
+					<td>Bright shade or semi-shade</td>
+					<td>Perennial</td>
+					<td>80cm-1m</td>
+					<td>1m</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>Dianthus:</b></th>
+					<td>Full sun to partial shade</td>
+					<td>Perennial</td>
+					<td>15-30cm</td>
+					<td>15-22cm</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>Dahlia:</b></th>
+					<td>Full sun to partial shade</td>
+					<td>Tender perennial</td>
+					<td>40cm</td>
+					<td>40cm</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>African Daisy:</b></th>
+					<td>Full sun</td>
+					<td>Tender perennial</td>
+					<td>20-30cm</td>
+					<td>20-30cm</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>Marigold:</b></th>
+					<td>Full sun</td>
+					<td>Annual</td>
+					<td>10cm</td>
+					<td>60cm</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>Petunia:</b></th>
+					<td>Full sun</td>
+					<td>Annual</td>
+					<td>15cm</td>
+					<td>20-25cm</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+	<div id="hideorshow">
+		<!-- Created a function that the table can be hided and shown. -->
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
+	</div>
+	<!-- Created a animation function so that the bee .gif can "fly" accross the screen. -->
+	<div id="beecontainer">
+		<h2>Battling to choose?</h2>
+		<p>How about letting Buzzer, the bee, help you decide? Hide the table by clicking on the "Hide" button. Close
+			your eyes and use the arrow keys on your keyboard to move him about. Which ever beautiful plant he lands on
+			should be the perfect choice for you.</p>
+		<img src="images/Bee.gif" alt="flyingbee" class="buzzerbee">
+	</div>
+
+	<footer>
+		<p> &copy; Hyperion Development.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a
+				href="http://www.hyperiondev.com">Hyperion Development</a></p>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

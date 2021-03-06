@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav class="top_nav">
+		<img src="images/Logo.png" alt="Logo" id="logo" />
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="Catalogue.html">Catalogue</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</div>
+		<span id="hamburger" onclick="openNav()">&#9776;</span>
+
+		<div id="search_bar">
+			<input type="search" placeholder="search..." />
+			<button><i class="fas fa-search"></i></button>
+		</div>
+		<!-- Created a shopping cart button that shows how many items are in the basket. -->
+		<div>
+			<a href="ShoppingCart.html" class="button" id="cart-button">
+				<i class="fas fa-shopping-cart" id="cart"></i>
+				<span class="amount-products badge badge-warning carttotal" id="lblCartCount">0</span>
+			</a>
+		</div>
+	</nav>
+
+	<div class="header">
+		<h1>About us</h1>
+		<p>Heart of Garden, a Durban-based nursery, was established in 2021 by Chanelle Bösiger. After being retrenched
+			she decided to take another career path and opened this nursery that specialises in indigenous flowering
+			plants.</p>
+		<img src="images/Chanelle.jpg" alt=Photo class=".img-fluid rounded-circle" id="chanelleimg">
+		<p>The decision to do so was based on the fact that she wanted to create awareness about and positively
+			contribute to our world's ecosystem.</p>
+		<p>Bee and other insect populations are decreasing fast due to our impact on the environment. One way to
+			contribute to creating a better future is by planting indigenous flowering plants.</p>
+		<p>Not only do flowering plants create a colourful and cheerful home environment that improves your mood, they
+			also:</p>
+	</div>
+
+	<ul>
+		<li>Attract bees</li>
+		<li>Attract other insects, such as butterflies and ladybird beetles</li>
+		<li>Attract birds</li>
+		<li>Carbon dioxide is absorbed and more oxygen is released into the atmosphere</li>
+		<li>Regulate water cycles</li>
+	</ul>
+
+	<h4>If you would like to read about the benefits of planting plants and especially flowering plants, please see
+		below some relevant articles:</h4>
+	<ul>
+		<li><a
+				href="https://www.gardentech.com/blog/garden-and-lawn-protection/gardening-for-bees-birds-and-butterflies">GardenTech
+				- Draw Pollinators Like Bees, Birds & Butterflies to Your Garden</a></li>
+		<li><a href="https://steemit.com/photography/@alfiandaud/benefits-of-planting-flowers-in-the-home-environment">Steemit
+				- Benefits of Planting Flowers in the Home Environment</a></li>
+		<li><a href="https://davesgarden.com/guides/articles/plant-a-bee-garden-for-our-threatened-pollinators">Dave's
+				Garden - https://davesgarden.com/guides/articles/plant-a-bee-garden-for-our-threatened-pollinators</a>
+		</li>
+	</ul>
+	<img src="images/Hands.jpg" alt=Give class=".img-fluid rounded-pill" id="handsimg">
+
+	<p>This is a chance to give back to nature and have your very own garden made with heart.</p>
+	<!-- Created a chained effect that increases the header size and change the colour. -->
+	<div id="chaineffect">
+		<h3 id="viewcatalogue">View our catalogue <a href="Catalogue.html">here</a>
+		</h3>
+		<button id="seeheaderbetter">Click to see me better</button>
+	</div>
+
+	<footer>
+		<p> &copy; Hyperion Development.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a
+				href="http://www.hyperiondev.com">Hyperion Development</a></p>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

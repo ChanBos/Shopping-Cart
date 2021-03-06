@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Dianthus</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav class="top_nav">
+		<img src="images/Logo.png" alt="Logo" id="logo" />
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="Catalogue.html">Catalogue</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</div>
+		<span id="hamburger" onclick="openNav()">&#9776;</span>
+
+		<div id="search_bar">
+			<input type="search" placeholder="search..." />
+			<button><i class="fas fa-search"></i></button>
+		</div>
+		<!-- Created a shopping cart button that shows how many items are in the basket. -->
+		<div>
+			<a href="ShoppingCart.html" class="button" id="cart-button">
+				<i class="fas fa-shopping-cart" id="cart"></i>
+				<span class="amount-products badge badge-warning carttotal" id="lblCartCount">0</span>
+			</a>
+		</div>
+	</nav>
+
+	<h1>Dianthus (Ideal Select Violet)</h1>
+	<img src="images/Dianthus.jpg" alt="Dianthus" class=".img-fluid" id="supportimg" />
+	<p id="supportprice">R45.00</p>
+	<!-- Added data attributes so that the product buttons will allow for items to be added to the cart. -->
+	<button onclick="addVisualCart(this)" data-name="Dianthus (Ideal Select Violet)" data-image="images/Dianthus.jpg"
+		data-price="45.00" class="add-to-cart supportbutton"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+
+	<h2>Plant information</h2>
+	<p>Dianthus 'Ideal Select Violet' boasts with spectacular violet frilly flowers, with a scarlet ring, above a
+		compact mound of fine green foliage.</p>
+	<ul>
+		<li>Full sun to partial shade</li>
+		<li>Tender perennials</li>
+		<li>40cm</li>
+		<li>40cm</li>
+	</ul>
+
+	<footer>
+		<p> &copy; Hyperion Development.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a
+				href="http://www.hyperiondev.com">Hyperion Development</a></p>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
