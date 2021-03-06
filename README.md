@@ -36,10 +36,12 @@ This will create a new directory which will initialise a .git directory within i
 
 ### Usage Instructions
 
+Please see below a detailed explanation on how to make use of the shopping cart (mentioned elements and actions are indicated with a red box):
+
 1. Add products to the cart from either the product pages (click on "More Details" button) or from the "Catalogue" page (click on "Add to Cart" button). An alert will confirm that the item has been added to the cart, as well as show the new total.
 
 
-2. Click on the cart icon at the top-right corner of the page. Note that the number increases and decreases as per the items in the cart.
+2. Click on the cart icon at the top-right corner of the page to access the "Shopping Cart" page. Note that the number increases and decreases as per the items in the cart.
 
 
 3. Increase or decrease the amount per product under the "Quantity" section, by clicking the arrows at the top (increase) or at the bottom (decrease) of the number. The total will be updated accordingly.
@@ -48,7 +50,7 @@ This will create a new directory which will initialise a .git directory within i
 4. Remove an item by clicking on the "Remove" button on the right of the item listing. An alert will display confirming that the product was removed and the total will be updated accordingly.
 
 
-5. Clear the entire cart by clicking on the "Clear Cart" button at the right-hand bottom of the page.
+5. Clear the entire cart by clicking on the "Clear Cart" button at the right-hand bottom of the page. An alert will confirm that the cart has been cleared.
 
 
 6. Select either collection or delivery by clicking on the radio buttons on the left-hand side of the listed item. If the delivery method is selected, but no option is selected, an alert will notify you that a selection needs to be made.
@@ -60,7 +62,7 @@ This will create a new directory which will initialise a .git directory within i
 8. Once the delivery or collection option is selected and the discount code is inserted, click on the "Update Total" button to update the cart total.
 
 
-9. Select whether the order is a gift or not by utilising the dropdown.
+9. Select whether the order is a gift or not by utilising the "Is this for yourself or a gift for someone else's garden?:" dropdown.
 
 
 10. Click on the "Confirm Order" button to confirm the order. An alert will display providing an unique order reference number.
