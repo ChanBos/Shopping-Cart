@@ -40,6 +40,7 @@ Please see below a detailed explanation on how to make use of the shopping cart 
 
 1. Add products to the cart from either the product pages (click on "More Details" button) or from the "Catalogue" page (click on "Add to Cart" button). An alert will confirm that the item has been added to the cart, as well as show the new total.
 
+![Add to Cart Catalogue Page](/Screenshots/Screenshot - 5.2 - AddProduct1.png)
 
 2. Click on the cart icon at the top-right corner of the page to access the "Shopping Cart" page. Note that the number increases and decreases as per the items in the cart.
 
