@@ -18,20 +18,23 @@ The goal is to enable a convenient, user-friendly and informative shopping cart 
 In order to pull the complete copy of this remote repository to your local system, you will need to make use of the Git clone command. Please follow the following steps:
 
 1. Select the directory that you wish to clone the project into. Example below: 
+
   ```
   cd folder/to/clone-into/
   ```
 
 2. Enter git clone [repository_url] into the terminal or command prompt. Code and link below: 
+
   ```
   git clone https://github.com/ChanBos/shoppingCart.git
   ```
 
 3. If you want a different folder name, simply specify it as the last parameter. Example below: 
+
   ```
   git clone https://github.com/ChanBos/shoppingCart.git other-name
   ```  
-  
+
 This will create a new directory which will initialise a .git directory within it, pulling all of the data from this project. You will find all of the files and folders in this directory, enabling you to use and edit it to your liking.
 
 ### Usage Instructions
