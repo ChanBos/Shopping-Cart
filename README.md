@@ -9,9 +9,9 @@ The goal is to enable a convenient, user-friendly and informative shopping cart 
 ### Table of Contents:
 =================
 
-  * [Installation](#installation)
-  * [Usage Instructions](#usage-instructions)
-  * [Credits](#credits)
+* [Installation](#installation)
+* [Usage Instructions](#usage-instructions)
+* [Credits](#credits)
 
 ### Installation
 
