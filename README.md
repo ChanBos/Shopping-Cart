@@ -7,7 +7,7 @@ The shopping cart is an essential part of an online store experience as it provi
 The goal is to enable a convenient, user-friendly and informative shopping cart for an online store. This also allows for the user to input important information that is necessary to complete an online order.
 
 ### Table of Contents:
-=================
+======================
 
 * [Installation](#installation)
 * [Usage Instructions](#usage-instructions)
